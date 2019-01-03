@@ -1,5 +1,6 @@
 //
-//  ViewController.swift
+//  Memo
+ViewController.swift
 //  Memorable
 //
 //  Created by 구민준 on 03/01/2019.
@@ -8,7 +9,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MemoViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()

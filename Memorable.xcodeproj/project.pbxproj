@@ -10,8 +10,9 @@
 		2E809E6629E9F85EBE4863E4 /* Pods_MemorableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D7D959EAA3AA1280F30005 /* Pods_MemorableUITests.framework */; };
 		584F06EFB9AD9D93C1B1B1FA /* Pods_Memorable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA57FEF5EC7FB8921717AD51 /* Pods_Memorable.framework */; };
 		667D55B4EDFEB973F738555C /* Pods_MemorableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79228A36BD96D3E32DABB225 /* Pods_MemorableTests.framework */; };
+		8093265021DE714200CA6CF3 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093264F21DE714200CA6CF3 /* MemoViewController.swift */; };
+		8093265221DE715500CA6CF3 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093265121DE715500CA6CF3 /* CalendarViewController.swift */; };
 		80ED9D8221DD25AA0032ED2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED9D8121DD25AA0032ED2A /* AppDelegate.swift */; };
-		80ED9D8421DD25AA0032ED2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED9D8321DD25AA0032ED2A /* ViewController.swift */; };
 		80ED9D8721DD25AA0032ED2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ED9D8521DD25AA0032ED2A /* Main.storyboard */; };
 		80ED9D8921DD25AC0032ED2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80ED9D8821DD25AC0032ED2A /* Assets.xcassets */; };
 		80ED9D8C21DD25AC0032ED2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ED9D8A21DD25AC0032ED2A /* LaunchScreen.storyboard */; };
@@ -43,9 +44,10 @@
 		583495B6FFE18D7CDAFDC578 /* Pods-MemorableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemorableTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemorableTests/Pods-MemorableTests.release.xcconfig"; sourceTree = "<group>"; };
 		6566D5033CF624FDD1835986 /* Pods-MemorableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemorableUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemorableUITests/Pods-MemorableUITests.release.xcconfig"; sourceTree = "<group>"; };
 		79228A36BD96D3E32DABB225 /* Pods_MemorableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemorableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8093264F21DE714200CA6CF3 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		8093265121DE715500CA6CF3 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		80ED9D7E21DD25AA0032ED2A /* Memorable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80ED9D8121DD25AA0032ED2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80ED9D8321DD25AA0032ED2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80ED9D8621DD25AA0032ED2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80ED9D8821DD25AC0032ED2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80ED9D8B21DD25AC0032ED2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,7 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				80ED9D8121DD25AA0032ED2A /* AppDelegate.swift */,
-				80ED9D8321DD25AA0032ED2A /* ViewController.swift */,
+				8093264F21DE714200CA6CF3 /* MemoViewController.swift */,
+				8093265121DE715500CA6CF3 /* CalendarViewController.swift */,
 				80ED9D8521DD25AA0032ED2A /* Main.storyboard */,
 				80ED9D8821DD25AC0032ED2A /* Assets.xcassets */,
 				80ED9D8A21DD25AC0032ED2A /* LaunchScreen.storyboard */,
@@ -391,7 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80ED9D8421DD25AA0032ED2A /* ViewController.swift in Sources */,
+				8093265221DE715500CA6CF3 /* CalendarViewController.swift in Sources */,
+				8093265021DE714200CA6CF3 /* MemoViewController.swift in Sources */,
 				80ED9D8221DD25AA0032ED2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
