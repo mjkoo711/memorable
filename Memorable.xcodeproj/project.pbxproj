@@ -134,8 +134,8 @@
 				8093265121DE715500CA6CF3 /* CalendarViewController.swift */,
 				80ED9D8521DD25AA0032ED2A /* Main.storyboard */,
 				80ED9D8821DD25AC0032ED2A /* Assets.xcassets */,
-				80ED9D8A21DD25AC0032ED2A /* LaunchScreen.storyboard */,
 				80ED9D8D21DD25AC0032ED2A /* Info.plist */,
+				80ED9D8A21DD25AC0032ED2A /* LaunchScreen.storyboard */,
 			);
 			path = Memorable;
 			sourceTree = "<group>";
@@ -573,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67369282ZY;
 				INFOPLIST_FILE = Memorable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,6 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67369282ZY;
 				INFOPLIST_FILE = Memorable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
