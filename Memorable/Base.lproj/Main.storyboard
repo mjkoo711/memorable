@@ -29,12 +29,49 @@
         <scene sceneID="bIu-bi-v5W">
             <objects>
                 <viewController title="메모장" id="bkc-UB-EPc" customClass="MemoViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Vp-IK-430">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4SW-FG-f8U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gYQ-kY-Xcd"/>
-                    </view>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HU0-PW-7hA" customClass="AlignedCollectionViewFlowLayout" customModule="AlignedCollectionViewFlowLayout">
+                            <size key="itemSize" width="185" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextCell" id="oHe-uw-u4M" customClass="TextCollectionViewCell" customModule="Memorable" customModuleProvider="target">
+                                <rect key="frame" x="95" y="0.0" width="185" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="185" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqx-hh-i21">
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.12696174839999999" green="1" blue="0.1245767076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rqx-hh-i21" secondAttribute="trailing" id="FFw-te-yDE"/>
+                                    <constraint firstItem="rqx-hh-i21" firstAttribute="top" secondItem="oHe-uw-u4M" secondAttribute="top" id="TIY-kx-a6y"/>
+                                    <constraint firstAttribute="bottom" secondItem="rqx-hh-i21" secondAttribute="bottom" id="hfA-Vc-uq0"/>
+                                    <constraint firstItem="rqx-hh-i21" firstAttribute="leading" secondItem="oHe-uw-u4M" secondAttribute="leading" id="xye-xG-xw8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="textLabel" destination="rqx-hh-i21" id="ZYK-Bs-IsO"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="bkc-UB-EPc" id="Dpi-oW-ns0"/>
+                            <outlet property="delegate" destination="bkc-UB-EPc" id="SVU-pK-yeW"/>
+                        </connections>
+                    </collectionView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="chQ-lg-Sgy">
                         <barButtonItem key="rightBarButtonItem" title="캘린더" id="Y4e-Zx-HuZ">
@@ -44,10 +81,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="4SW-FG-f8U" id="64Q-Oq-zHk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKe-tm-H2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="-564"/>
+            <point key="canvasLocation" x="1557.5999999999999" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fkv-2M-Kfc">

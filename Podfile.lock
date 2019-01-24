@@ -1,16 +1,20 @@
 PODS:
+  - AlignedCollectionViewFlowLayout (1.1.2)
   - FSCalendar (2.8.0)
 
 DEPENDENCIES:
+  - AlignedCollectionViewFlowLayout
   - FSCalendar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AlignedCollectionViewFlowLayout
     - FSCalendar
 
 SPEC CHECKSUMS:
+  AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
 
-PODFILE CHECKSUM: 97f7c598445aaf29edb0bfdeaeb5c2c8019545ac
+PODFILE CHECKSUM: efbe73332751b533f1ba80dec22e401300d6710c
 
 COCOAPODS: 1.5.3
