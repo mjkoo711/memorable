@@ -29,12 +29,50 @@
         <scene sceneID="bIu-bi-v5W">
             <objects>
                 <viewController title="메모장" id="bkc-UB-EPc" customClass="MemoViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Vp-IK-430">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="cKT-dE-n0O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gYQ-kY-Xcd"/>
-                    </view>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k1k-1c-i3Z">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TextCell" id="rrz-b5-WRw" customClass="TextCollectionViewCell" customModule="Memorable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuI-3S-3bg">
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.95349058909999995" green="1" blue="0.17444826890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UuI-3S-3bg" firstAttribute="leading" secondItem="rrz-b5-WRw" secondAttribute="leading" id="Fvl-aE-zwg"/>
+                                    <constraint firstAttribute="bottom" secondItem="UuI-3S-3bg" secondAttribute="bottom" id="LNa-SS-8bj"/>
+                                    <constraint firstItem="UuI-3S-3bg" firstAttribute="top" secondItem="rrz-b5-WRw" secondAttribute="top" id="TeB-mq-ag5"/>
+                                    <constraint firstAttribute="trailing" secondItem="UuI-3S-3bg" secondAttribute="trailing" id="g2P-jD-OTb"/>
+                                </constraints>
+                                <size key="customSize" width="145" height="50"/>
+                                <connections>
+                                    <outlet property="textLabel" destination="UuI-3S-3bg" id="0SG-JX-LaY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="bkc-UB-EPc" id="sUa-ls-CF7"/>
+                            <outlet property="delegate" destination="bkc-UB-EPc" id="9ha-nU-W9k"/>
+                        </connections>
+                    </collectionView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="chQ-lg-Sgy">
                         <barButtonItem key="rightBarButtonItem" title="캘린더" id="Y4e-Zx-HuZ">
@@ -44,10 +82,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="cKT-dE-n0O" id="Gk1-UT-biP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKe-tm-H2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="-564"/>
+            <point key="canvasLocation" x="1557.5999999999999" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fkv-2M-Kfc">

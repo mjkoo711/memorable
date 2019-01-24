@@ -18,6 +18,7 @@
 		80ED9D8C21DD25AC0032ED2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80ED9D8A21DD25AC0032ED2A /* LaunchScreen.storyboard */; };
 		80ED9D9721DD25AC0032ED2A /* MemorableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED9D9621DD25AC0032ED2A /* MemorableTests.swift */; };
 		80ED9DA221DD25AC0032ED2A /* MemorableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED9DA121DD25AC0032ED2A /* MemorableUITests.swift */; };
+		E28FDC7F21F9574900D6EC69 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FDC7E21F9574900D6EC69 /* TextCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		80ED9DA321DD25AC0032ED2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B996468845FB0859F583C63A /* Pods-MemorableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemorableUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemorableUITests/Pods-MemorableUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA57FEF5EC7FB8921717AD51 /* Pods_Memorable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memorable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28FDC7E21F9574900D6EC69 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6D7D959EAA3AA1280F30005 /* Pods_MemorableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemorableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 			children = (
 				80ED9D8121DD25AA0032ED2A /* AppDelegate.swift */,
 				8093264F21DE714200CA6CF3 /* MemoViewController.swift */,
+				E28FDC7E21F9574900D6EC69 /* TextCollectionViewCell.swift */,
 				8093265121DE715500CA6CF3 /* CalendarViewController.swift */,
 				80ED9D8521DD25AA0032ED2A /* Main.storyboard */,
 				80ED9D8821DD25AC0032ED2A /* Assets.xcassets */,
@@ -330,12 +333,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Memorable/Pods-Memorable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AlignedCollectionViewFlowLayout/AlignedCollectionViewFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlignedCollectionViewFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +402,7 @@
 				8093265221DE715500CA6CF3 /* CalendarViewController.swift in Sources */,
 				8093265021DE714200CA6CF3 /* MemoViewController.swift in Sources */,
 				80ED9D8221DD25AA0032ED2A /* AppDelegate.swift in Sources */,
+				E28FDC7F21F9574900D6EC69 /* TextCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
