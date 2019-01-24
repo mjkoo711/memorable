@@ -12,14 +12,13 @@ import AlignedCollectionViewFlowLayout
 
 class MemoViewController: UIViewController {
   @IBOutlet var collectionView: UICollectionView!
-  let contents: [String] = ["aaaa", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg"]
+  let contents: [String] = ["aaaa", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg"]
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     let flowLayout = collectionView.collectionViewLayout as? AlignedCollectionViewFlowLayout
     flowLayout?.horizontalAlignment = .left
-
   }
 }
 
@@ -39,7 +38,6 @@ extension MemoViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension MemoViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    print(contents[indexPath.row].widthOfString(usingFont: UIFont(name:"verdana", size: 13.0)!))
-    return CGSize(width: contents[indexPath.row].widthOfString(usingFont: UIFont(name:"verdana", size: 13.0)!) + 20, height:35)
+    return CGSize(width: contents[indexPath.row].widthOfString(usingFont: UIFont(name:"verdana", size: 14.0)!) + 20, height:35)
   }
 }
