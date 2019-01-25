@@ -31,7 +31,7 @@
                 <viewController title="메모장" id="bkc-UB-EPc" customClass="MemoViewController" customModule="Memorable" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4SW-FG-f8U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HU0-PW-7hA" customClass="AlignedCollectionViewFlowLayout" customModule="AlignedCollectionViewFlowLayout">
                             <size key="itemSize" width="185" height="50"/>
@@ -47,7 +47,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="185" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqx-hh-i21">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqx-hh-i21">
                                             <rect key="frame" x="0.0" y="0.0" width="185" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
@@ -55,12 +55,12 @@
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.12696174839999999" green="1" blue="0.1245767076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="rqx-hh-i21" firstAttribute="top" secondItem="oHe-uw-u4M" secondAttribute="top" id="1o0-BG-z1E"/>
                                     <constraint firstAttribute="trailing" secondItem="rqx-hh-i21" secondAttribute="trailing" id="FFw-te-yDE"/>
-                                    <constraint firstItem="rqx-hh-i21" firstAttribute="top" secondItem="oHe-uw-u4M" secondAttribute="top" id="TIY-kx-a6y"/>
-                                    <constraint firstAttribute="bottom" secondItem="rqx-hh-i21" secondAttribute="bottom" id="hfA-Vc-uq0"/>
-                                    <constraint firstItem="rqx-hh-i21" firstAttribute="leading" secondItem="oHe-uw-u4M" secondAttribute="leading" id="xye-xG-xw8"/>
+                                    <constraint firstItem="rqx-hh-i21" firstAttribute="leading" secondItem="oHe-uw-u4M" secondAttribute="leading" id="eAf-0T-gYJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="rqx-hh-i21" secondAttribute="bottom" id="hSF-fd-HSx"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="textLabel" destination="rqx-hh-i21" id="ZYK-Bs-IsO"/>

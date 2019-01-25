@@ -12,7 +12,7 @@ import AlignedCollectionViewFlowLayout
 
 class MemoViewController: UIViewController {
   @IBOutlet var collectionView: UICollectionView!
-  let contents: [String] = ["aaaa", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg"]
+  let contents: [String] = ["aaaa", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㄴㅇㅁㄹㄴㅇㄹㅁㄴㄹㅁㄴㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg", "bbbbbb", "cccccccc", "ddddddddd", "eeeeeeeeeeee", "ffff", "GGggggㅎㅎㄷㅎㅇㄹㅁㅇㄴㄹㄴㅁㅇㄹㅁㄴㅇㄹg"]
 
   var tempContents: [String] = []
 
@@ -21,6 +21,7 @@ class MemoViewController: UIViewController {
 
     let flowLayout = collectionView.collectionViewLayout as? AlignedCollectionViewFlowLayout
     flowLayout?.horizontalAlignment = .left
+
   }
 }
 
@@ -40,12 +41,10 @@ extension MemoViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension MemoViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TextCell", for: indexPath) as! TextCollectionViewCell
 
     let width = contents[indexPath.row].widthOfString(usingFont: UIFont(name:"verdana", size: 14.0)!)
     print("screen width: \(UIScreen.main.bounds.width)")
     print("text width: \(width)")
-    print("cell xpoint: \(cell.bounds.origin.x)" )
-    return CGSize(width: width + 20, height:35)
+    return CGSize(width: width, height:30)
   }
 }
